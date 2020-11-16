@@ -3,30 +3,30 @@
     {
       "git": {
         "name": ".",
-        "remote": "https://github.com/googleapis/python-area120-tables.git",
-        "sha": "f1c59358a323797d209e2a2b80135deae6667a1d"
+        "remote": "git@github.com:googleapis/python-area120-tables",
+        "sha": "d2bbc2a2df5282893fc2690e7a3ff535c591cef1"
       }
     },
     {
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "921ce41f94a74905ca753c72a4d4cc43600003d3",
-        "internalRef": "331675651"
+        "sha": "6a69c750c3f01a69017662395f90515bbf1fe1ff",
+        "internalRef": "342721036"
       }
     },
     {
       "git": {
         "name": "synthtool",
         "remote": "https://github.com/googleapis/synthtool.git",
-        "sha": "ffcee7952b74f647cbb3ef021d95422f10816fca"
+        "sha": "d5fc0bcf9ea9789c5b0e3154a9e3b29e5cea6116"
       }
     },
     {
       "git": {
         "name": "synthtool",
         "remote": "https://github.com/googleapis/synthtool.git",
-        "sha": "ffcee7952b74f647cbb3ef021d95422f10816fca"
+        "sha": "d5fc0bcf9ea9789c5b0e3154a9e3b29e5cea6116"
       }
     }
   ],
@@ -40,86 +40,5 @@
         "generator": "bazel"
       }
     }
-  ],
-  "generatedFiles": [
-    ".flake8",
-    ".github/CONTRIBUTING.md",
-    ".github/ISSUE_TEMPLATE/bug_report.md",
-    ".github/ISSUE_TEMPLATE/feature_request.md",
-    ".github/ISSUE_TEMPLATE/support_request.md",
-    ".github/PULL_REQUEST_TEMPLATE.md",
-    ".github/release-please.yml",
-    ".github/snippet-bot.yml",
-    ".gitignore",
-    ".kokoro/build.sh",
-    ".kokoro/continuous/common.cfg",
-    ".kokoro/continuous/continuous.cfg",
-    ".kokoro/docker/docs/Dockerfile",
-    ".kokoro/docker/docs/fetch_gpg_keys.sh",
-    ".kokoro/docs/common.cfg",
-    ".kokoro/docs/docs-presubmit.cfg",
-    ".kokoro/docs/docs.cfg",
-    ".kokoro/presubmit/common.cfg",
-    ".kokoro/presubmit/presubmit.cfg",
-    ".kokoro/publish-docs.sh",
-    ".kokoro/release.sh",
-    ".kokoro/release/common.cfg",
-    ".kokoro/release/release.cfg",
-    ".kokoro/samples/lint/common.cfg",
-    ".kokoro/samples/lint/continuous.cfg",
-    ".kokoro/samples/lint/periodic.cfg",
-    ".kokoro/samples/lint/presubmit.cfg",
-    ".kokoro/samples/python3.6/common.cfg",
-    ".kokoro/samples/python3.6/continuous.cfg",
-    ".kokoro/samples/python3.6/periodic.cfg",
-    ".kokoro/samples/python3.6/presubmit.cfg",
-    ".kokoro/samples/python3.7/common.cfg",
-    ".kokoro/samples/python3.7/continuous.cfg",
-    ".kokoro/samples/python3.7/periodic.cfg",
-    ".kokoro/samples/python3.7/presubmit.cfg",
-    ".kokoro/samples/python3.8/common.cfg",
-    ".kokoro/samples/python3.8/continuous.cfg",
-    ".kokoro/samples/python3.8/periodic.cfg",
-    ".kokoro/samples/python3.8/presubmit.cfg",
-    ".kokoro/test-samples.sh",
-    ".kokoro/trampoline.sh",
-    ".kokoro/trampoline_v2.sh",
-    ".trampolinerc",
-    "CODE_OF_CONDUCT.md",
-    "CONTRIBUTING.rst",
-    "LICENSE",
-    "MANIFEST.in",
-    "docs/_static/custom.css",
-    "docs/_templates/layout.html",
-    "docs/conf.py",
-    "docs/gapic/v1alpha1/api.rst",
-    "docs/gapic/v1alpha1/types.rst",
-    "docs/multiprocessing.rst",
-    "google/__init__.py",
-    "google/area120/__init__.py",
-    "google/area120/tables.py",
-    "google/area120/tables_v1alpha/__init__.py",
-    "google/area120/tables_v1alpha/gapic/__init__.py",
-    "google/area120/tables_v1alpha/gapic/enums.py",
-    "google/area120/tables_v1alpha/gapic/tables_service_client.py",
-    "google/area120/tables_v1alpha/gapic/tables_service_client_config.py",
-    "google/area120/tables_v1alpha/gapic/transports/__init__.py",
-    "google/area120/tables_v1alpha/gapic/transports/tables_service_grpc_transport.py",
-    "google/area120/tables_v1alpha/types.py",
-    "google/cloud/area120_tables_v1alpha1/proto/__init__.py",
-    "google/cloud/area120_tables_v1alpha1/proto/tables_pb2.py",
-    "google/cloud/area120_tables_v1alpha1/proto/tables_pb2_grpc.py",
-    "noxfile.py",
-    "renovate.json",
-    "scripts/decrypt-secrets.sh",
-    "scripts/readme-gen/readme_gen.py",
-    "scripts/readme-gen/templates/README.tmpl.rst",
-    "scripts/readme-gen/templates/auth.tmpl.rst",
-    "scripts/readme-gen/templates/auth_api_key.tmpl.rst",
-    "scripts/readme-gen/templates/install_deps.tmpl.rst",
-    "scripts/readme-gen/templates/install_portaudio.tmpl.rst",
-    "setup.cfg",
-    "testing/.gitignore",
-    "tests/unit/gapic/v1alpha1/test_tables_service_client_v1alpha1.py"
   ]
 }
