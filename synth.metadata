@@ -4,7 +4,7 @@
       "git": {
         "name": ".",
         "remote": "git@github.com:googleapis/python-area120-tables",
-        "sha": "d2bbc2a2df5282893fc2690e7a3ff535c591cef1"
+        "sha": "5522f040f009f2ffd8e11eaa21b9ca8fdc8591fa"
       }
     },
     {
