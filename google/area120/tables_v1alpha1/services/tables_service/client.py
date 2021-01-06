@@ -120,6 +120,22 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
     )
 
     @classmethod
+    def from_service_account_info(cls, info: dict, *args, **kwargs):
+        """Creates an instance of this client using the provided credentials info.
+
+        Args:
+            info (dict): The service account private key info.
+            args: Additional arguments to pass to the constructor.
+            kwargs: Additional arguments to pass to the constructor.
+
+        Returns:
+            TablesServiceClient: The constructed client.
+        """
+        credentials = service_account.Credentials.from_service_account_info(info)
+        kwargs["credentials"] = credentials
+        return cls(*args, **kwargs)
+
+    @classmethod
     def from_service_account_file(cls, filename: str, *args, **kwargs):
         """Creates an instance of this client using the provided credentials
         file.
@@ -131,7 +147,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
             kwargs: Additional arguments to pass to the constructor.
 
         Returns:
-            {@api.name}: The constructed client.
+            TablesServiceClient: The constructed client.
         """
         credentials = service_account.Credentials.from_service_account_file(filename)
         kwargs["credentials"] = credentials
@@ -245,10 +261,10 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
                 credentials identify the application to the service; if none
                 are specified, the client will attempt to ascertain the
                 credentials from the environment.
-            transport (Union[str, ~.TablesServiceTransport]): The
+            transport (Union[str, TablesServiceTransport]): The
                 transport to use. If set to None, a transport is chosen
                 automatically.
-            client_options (client_options_lib.ClientOptions): Custom options for the
+            client_options (google.api_core.client_options.ClientOptions): Custom options for the
                 client. It won't take effect if a ``transport`` instance is provided.
                 (1) The ``api_endpoint`` property can be used to override the
                 default endpoint provided by the client. GOOGLE_API_USE_MTLS_ENDPOINT
@@ -358,12 +374,13 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
         r"""Gets a table. Returns NOT_FOUND if the table does not exist.
 
         Args:
-            request (:class:`~.tables.GetTableRequest`):
+            request (google.area120.tables_v1alpha1.types.GetTableRequest):
                 The request object. Request message for
                 TablesService.GetTable.
-            name (:class:`str`):
+            name (str):
                 Required. The name of the table to
                 retrieve. Format: tables/{table}
+
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this
                 should not be set.
@@ -375,7 +392,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
                 sent along with the request as metadata.
 
         Returns:
-            ~.tables.Table:
+            google.area120.tables_v1alpha1.types.Table:
                 A single table.
         """
         # Create or coerce a protobuf request object.
@@ -428,7 +445,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
         r"""Lists tables for the user.
 
         Args:
-            request (:class:`~.tables.ListTablesRequest`):
+            request (google.area120.tables_v1alpha1.types.ListTablesRequest):
                 The request object. Request message for
                 TablesService.ListTables.
 
@@ -439,7 +456,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
                 sent along with the request as metadata.
 
         Returns:
-            ~.pagers.ListTablesPager:
+            google.area120.tables_v1alpha1.services.tables_service.pagers.ListTablesPager:
                 Response message for
                 TablesService.ListTables.
                 Iterating over this object will yield
@@ -485,13 +502,14 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
         table.
 
         Args:
-            request (:class:`~.tables.GetRowRequest`):
+            request (google.area120.tables_v1alpha1.types.GetRowRequest):
                 The request object. Request message for
                 TablesService.GetRow.
-            name (:class:`str`):
+            name (str):
                 Required. The name of the row to
                 retrieve. Format:
                 tables/{table}/rows/{row}
+
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this
                 should not be set.
@@ -503,7 +521,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
                 sent along with the request as metadata.
 
         Returns:
-            ~.tables.Row:
+            google.area120.tables_v1alpha1.types.Row:
                 A single row in a table.
         """
         # Create or coerce a protobuf request object.
@@ -558,12 +576,13 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
         exist.
 
         Args:
-            request (:class:`~.tables.ListRowsRequest`):
+            request (google.area120.tables_v1alpha1.types.ListRowsRequest):
                 The request object. Request message for
                 TablesService.ListRows.
-            parent (:class:`str`):
+            parent (str):
                 Required. The parent table.
                 Format: tables/{table}
+
                 This corresponds to the ``parent`` field
                 on the ``request`` instance; if ``request`` is provided, this
                 should not be set.
@@ -575,7 +594,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
                 sent along with the request as metadata.
 
         Returns:
-            ~.pagers.ListRowsPager:
+            google.area120.tables_v1alpha1.services.tables_service.pagers.ListRowsPager:
                 Response message for
                 TablesService.ListRows.
                 Iterating over this object will yield
@@ -641,17 +660,18 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
         r"""Creates a row.
 
         Args:
-            request (:class:`~.tables.CreateRowRequest`):
+            request (google.area120.tables_v1alpha1.types.CreateRowRequest):
                 The request object. Request message for
                 TablesService.CreateRow.
-            parent (:class:`str`):
+            parent (str):
                 Required. The parent table where this
                 row will be created. Format:
                 tables/{table}
+
                 This corresponds to the ``parent`` field
                 on the ``request`` instance; if ``request`` is provided, this
                 should not be set.
-            row (:class:`~.tables.Row`):
+            row (google.area120.tables_v1alpha1.types.Row):
                 Required. The row to create.
                 This corresponds to the ``row`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -664,7 +684,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
                 sent along with the request as metadata.
 
         Returns:
-            ~.tables.Row:
+            google.area120.tables_v1alpha1.types.Row:
                 A single row in a table.
         """
         # Create or coerce a protobuf request object.
@@ -719,7 +739,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
         r"""Creates multiple rows.
 
         Args:
-            request (:class:`~.tables.BatchCreateRowsRequest`):
+            request (google.area120.tables_v1alpha1.types.BatchCreateRowsRequest):
                 The request object. Request message for
                 TablesService.BatchCreateRows.
 
@@ -730,7 +750,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
                 sent along with the request as metadata.
 
         Returns:
-            ~.tables.BatchCreateRowsResponse:
+            google.area120.tables_v1alpha1.types.BatchCreateRowsResponse:
                 Response message for
                 TablesService.BatchCreateRows.
 
@@ -773,15 +793,15 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
         r"""Updates a row.
 
         Args:
-            request (:class:`~.tables.UpdateRowRequest`):
+            request (google.area120.tables_v1alpha1.types.UpdateRowRequest):
                 The request object. Request message for
                 TablesService.UpdateRow.
-            row (:class:`~.tables.Row`):
+            row (google.area120.tables_v1alpha1.types.Row):
                 Required. The row to update.
                 This corresponds to the ``row`` field
                 on the ``request`` instance; if ``request`` is provided, this
                 should not be set.
-            update_mask (:class:`~.field_mask.FieldMask`):
+            update_mask (google.protobuf.field_mask_pb2.FieldMask):
                 The list of fields to update.
                 This corresponds to the ``update_mask`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -794,7 +814,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
                 sent along with the request as metadata.
 
         Returns:
-            ~.tables.Row:
+            google.area120.tables_v1alpha1.types.Row:
                 A single row in a table.
         """
         # Create or coerce a protobuf request object.
@@ -849,7 +869,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
         r"""Updates multiple rows.
 
         Args:
-            request (:class:`~.tables.BatchUpdateRowsRequest`):
+            request (google.area120.tables_v1alpha1.types.BatchUpdateRowsRequest):
                 The request object. Request message for
                 TablesService.BatchUpdateRows.
 
@@ -860,7 +880,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
                 sent along with the request as metadata.
 
         Returns:
-            ~.tables.BatchUpdateRowsResponse:
+            google.area120.tables_v1alpha1.types.BatchUpdateRowsResponse:
                 Response message for
                 TablesService.BatchUpdateRows.
 
@@ -902,13 +922,14 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
         r"""Deletes a row.
 
         Args:
-            request (:class:`~.tables.DeleteRowRequest`):
+            request (google.area120.tables_v1alpha1.types.DeleteRowRequest):
                 The request object. Request message for
                 TablesService.DeleteRow
-            name (:class:`str`):
+            name (str):
                 Required. The name of the row to
                 delete. Format:
                 tables/{table}/rows/{row}
+
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this
                 should not be set.

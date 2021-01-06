@@ -24,7 +24,7 @@ class ListTablesPager:
     """A pager for iterating through ``list_tables`` requests.
 
     This class thinly wraps an initial
-    :class:`~.tables.ListTablesResponse` object, and
+    :class:`google.area120.tables_v1alpha1.types.ListTablesResponse` object, and
     provides an ``__iter__`` method to iterate through its
     ``tables`` field.
 
@@ -33,7 +33,7 @@ class ListTablesPager:
     through the ``tables`` field on the
     corresponding responses.
 
-    All the usual :class:`~.tables.ListTablesResponse`
+    All the usual :class:`google.area120.tables_v1alpha1.types.ListTablesResponse`
     attributes are available on the pager. If multiple requests are made, only
     the most recent response is retained, and thus used for attribute lookup.
     """
@@ -51,9 +51,9 @@ class ListTablesPager:
         Args:
             method (Callable): The method that was originally called, and
                 which instantiated this pager.
-            request (:class:`~.tables.ListTablesRequest`):
+            request (google.area120.tables_v1alpha1.types.ListTablesRequest):
                 The initial request object.
-            response (:class:`~.tables.ListTablesResponse`):
+            response (google.area120.tables_v1alpha1.types.ListTablesResponse):
                 The initial response object.
             metadata (Sequence[Tuple[str, str]]): Strings which should be
                 sent along with the request as metadata.
@@ -86,7 +86,7 @@ class ListTablesAsyncPager:
     """A pager for iterating through ``list_tables`` requests.
 
     This class thinly wraps an initial
-    :class:`~.tables.ListTablesResponse` object, and
+    :class:`google.area120.tables_v1alpha1.types.ListTablesResponse` object, and
     provides an ``__aiter__`` method to iterate through its
     ``tables`` field.
 
@@ -95,7 +95,7 @@ class ListTablesAsyncPager:
     through the ``tables`` field on the
     corresponding responses.
 
-    All the usual :class:`~.tables.ListTablesResponse`
+    All the usual :class:`google.area120.tables_v1alpha1.types.ListTablesResponse`
     attributes are available on the pager. If multiple requests are made, only
     the most recent response is retained, and thus used for attribute lookup.
     """
@@ -113,9 +113,9 @@ class ListTablesAsyncPager:
         Args:
             method (Callable): The method that was originally called, and
                 which instantiated this pager.
-            request (:class:`~.tables.ListTablesRequest`):
+            request (google.area120.tables_v1alpha1.types.ListTablesRequest):
                 The initial request object.
-            response (:class:`~.tables.ListTablesResponse`):
+            response (google.area120.tables_v1alpha1.types.ListTablesResponse):
                 The initial response object.
             metadata (Sequence[Tuple[str, str]]): Strings which should be
                 sent along with the request as metadata.
@@ -152,7 +152,7 @@ class ListRowsPager:
     """A pager for iterating through ``list_rows`` requests.
 
     This class thinly wraps an initial
-    :class:`~.tables.ListRowsResponse` object, and
+    :class:`google.area120.tables_v1alpha1.types.ListRowsResponse` object, and
     provides an ``__iter__`` method to iterate through its
     ``rows`` field.
 
@@ -161,7 +161,7 @@ class ListRowsPager:
     through the ``rows`` field on the
     corresponding responses.
 
-    All the usual :class:`~.tables.ListRowsResponse`
+    All the usual :class:`google.area120.tables_v1alpha1.types.ListRowsResponse`
     attributes are available on the pager. If multiple requests are made, only
     the most recent response is retained, and thus used for attribute lookup.
     """
@@ -179,9 +179,9 @@ class ListRowsPager:
         Args:
             method (Callable): The method that was originally called, and
                 which instantiated this pager.
-            request (:class:`~.tables.ListRowsRequest`):
+            request (google.area120.tables_v1alpha1.types.ListRowsRequest):
                 The initial request object.
-            response (:class:`~.tables.ListRowsResponse`):
+            response (google.area120.tables_v1alpha1.types.ListRowsResponse):
                 The initial response object.
             metadata (Sequence[Tuple[str, str]]): Strings which should be
                 sent along with the request as metadata.
@@ -214,7 +214,7 @@ class ListRowsAsyncPager:
     """A pager for iterating through ``list_rows`` requests.
 
     This class thinly wraps an initial
-    :class:`~.tables.ListRowsResponse` object, and
+    :class:`google.area120.tables_v1alpha1.types.ListRowsResponse` object, and
     provides an ``__aiter__`` method to iterate through its
     ``rows`` field.
 
@@ -223,7 +223,7 @@ class ListRowsAsyncPager:
     through the ``rows`` field on the
     corresponding responses.
 
-    All the usual :class:`~.tables.ListRowsResponse`
+    All the usual :class:`google.area120.tables_v1alpha1.types.ListRowsResponse`
     attributes are available on the pager. If multiple requests are made, only
     the most recent response is retained, and thus used for attribute lookup.
     """
@@ -241,9 +241,9 @@ class ListRowsAsyncPager:
         Args:
             method (Callable): The method that was originally called, and
                 which instantiated this pager.
-            request (:class:`~.tables.ListRowsRequest`):
+            request (google.area120.tables_v1alpha1.types.ListRowsRequest):
                 The initial request object.
-            response (:class:`~.tables.ListRowsResponse`):
+            response (google.area120.tables_v1alpha1.types.ListRowsResponse):
                 The initial response object.
             metadata (Sequence[Tuple[str, str]]): Strings which should be
                 sent along with the request as metadata.

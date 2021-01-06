@@ -89,6 +89,7 @@ class TablesServiceAsyncClient:
         TablesServiceClient.parse_common_location_path
     )
 
+    from_service_account_info = TablesServiceClient.from_service_account_info
     from_service_account_file = TablesServiceClient.from_service_account_file
     from_service_account_json = from_service_account_file
 
@@ -165,12 +166,13 @@ class TablesServiceAsyncClient:
         r"""Gets a table. Returns NOT_FOUND if the table does not exist.
 
         Args:
-            request (:class:`~.tables.GetTableRequest`):
+            request (:class:`google.area120.tables_v1alpha1.types.GetTableRequest`):
                 The request object. Request message for
                 TablesService.GetTable.
             name (:class:`str`):
                 Required. The name of the table to
                 retrieve. Format: tables/{table}
+
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this
                 should not be set.
@@ -182,7 +184,7 @@ class TablesServiceAsyncClient:
                 sent along with the request as metadata.
 
         Returns:
-            ~.tables.Table:
+            google.area120.tables_v1alpha1.types.Table:
                 A single table.
         """
         # Create or coerce a protobuf request object.
@@ -234,7 +236,7 @@ class TablesServiceAsyncClient:
         r"""Lists tables for the user.
 
         Args:
-            request (:class:`~.tables.ListTablesRequest`):
+            request (:class:`google.area120.tables_v1alpha1.types.ListTablesRequest`):
                 The request object. Request message for
                 TablesService.ListTables.
 
@@ -245,7 +247,7 @@ class TablesServiceAsyncClient:
                 sent along with the request as metadata.
 
         Returns:
-            ~.pagers.ListTablesAsyncPager:
+            google.area120.tables_v1alpha1.services.tables_service.pagers.ListTablesAsyncPager:
                 Response message for
                 TablesService.ListTables.
                 Iterating over this object will yield
@@ -290,13 +292,14 @@ class TablesServiceAsyncClient:
         table.
 
         Args:
-            request (:class:`~.tables.GetRowRequest`):
+            request (:class:`google.area120.tables_v1alpha1.types.GetRowRequest`):
                 The request object. Request message for
                 TablesService.GetRow.
             name (:class:`str`):
                 Required. The name of the row to
                 retrieve. Format:
                 tables/{table}/rows/{row}
+
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this
                 should not be set.
@@ -308,7 +311,7 @@ class TablesServiceAsyncClient:
                 sent along with the request as metadata.
 
         Returns:
-            ~.tables.Row:
+            google.area120.tables_v1alpha1.types.Row:
                 A single row in a table.
         """
         # Create or coerce a protobuf request object.
@@ -362,12 +365,13 @@ class TablesServiceAsyncClient:
         exist.
 
         Args:
-            request (:class:`~.tables.ListRowsRequest`):
+            request (:class:`google.area120.tables_v1alpha1.types.ListRowsRequest`):
                 The request object. Request message for
                 TablesService.ListRows.
             parent (:class:`str`):
                 Required. The parent table.
                 Format: tables/{table}
+
                 This corresponds to the ``parent`` field
                 on the ``request`` instance; if ``request`` is provided, this
                 should not be set.
@@ -379,7 +383,7 @@ class TablesServiceAsyncClient:
                 sent along with the request as metadata.
 
         Returns:
-            ~.pagers.ListRowsAsyncPager:
+            google.area120.tables_v1alpha1.services.tables_service.pagers.ListRowsAsyncPager:
                 Response message for
                 TablesService.ListRows.
                 Iterating over this object will yield
@@ -444,17 +448,18 @@ class TablesServiceAsyncClient:
         r"""Creates a row.
 
         Args:
-            request (:class:`~.tables.CreateRowRequest`):
+            request (:class:`google.area120.tables_v1alpha1.types.CreateRowRequest`):
                 The request object. Request message for
                 TablesService.CreateRow.
             parent (:class:`str`):
                 Required. The parent table where this
                 row will be created. Format:
                 tables/{table}
+
                 This corresponds to the ``parent`` field
                 on the ``request`` instance; if ``request`` is provided, this
                 should not be set.
-            row (:class:`~.tables.Row`):
+            row (:class:`google.area120.tables_v1alpha1.types.Row`):
                 Required. The row to create.
                 This corresponds to the ``row`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -467,7 +472,7 @@ class TablesServiceAsyncClient:
                 sent along with the request as metadata.
 
         Returns:
-            ~.tables.Row:
+            google.area120.tables_v1alpha1.types.Row:
                 A single row in a table.
         """
         # Create or coerce a protobuf request object.
@@ -521,7 +526,7 @@ class TablesServiceAsyncClient:
         r"""Creates multiple rows.
 
         Args:
-            request (:class:`~.tables.BatchCreateRowsRequest`):
+            request (:class:`google.area120.tables_v1alpha1.types.BatchCreateRowsRequest`):
                 The request object. Request message for
                 TablesService.BatchCreateRows.
 
@@ -532,7 +537,7 @@ class TablesServiceAsyncClient:
                 sent along with the request as metadata.
 
         Returns:
-            ~.tables.BatchCreateRowsResponse:
+            google.area120.tables_v1alpha1.types.BatchCreateRowsResponse:
                 Response message for
                 TablesService.BatchCreateRows.
 
@@ -574,15 +579,15 @@ class TablesServiceAsyncClient:
         r"""Updates a row.
 
         Args:
-            request (:class:`~.tables.UpdateRowRequest`):
+            request (:class:`google.area120.tables_v1alpha1.types.UpdateRowRequest`):
                 The request object. Request message for
                 TablesService.UpdateRow.
-            row (:class:`~.tables.Row`):
+            row (:class:`google.area120.tables_v1alpha1.types.Row`):
                 Required. The row to update.
                 This corresponds to the ``row`` field
                 on the ``request`` instance; if ``request`` is provided, this
                 should not be set.
-            update_mask (:class:`~.field_mask.FieldMask`):
+            update_mask (:class:`google.protobuf.field_mask_pb2.FieldMask`):
                 The list of fields to update.
                 This corresponds to the ``update_mask`` field
                 on the ``request`` instance; if ``request`` is provided, this
@@ -595,7 +600,7 @@ class TablesServiceAsyncClient:
                 sent along with the request as metadata.
 
         Returns:
-            ~.tables.Row:
+            google.area120.tables_v1alpha1.types.Row:
                 A single row in a table.
         """
         # Create or coerce a protobuf request object.
@@ -649,7 +654,7 @@ class TablesServiceAsyncClient:
         r"""Updates multiple rows.
 
         Args:
-            request (:class:`~.tables.BatchUpdateRowsRequest`):
+            request (:class:`google.area120.tables_v1alpha1.types.BatchUpdateRowsRequest`):
                 The request object. Request message for
                 TablesService.BatchUpdateRows.
 
@@ -660,7 +665,7 @@ class TablesServiceAsyncClient:
                 sent along with the request as metadata.
 
         Returns:
-            ~.tables.BatchUpdateRowsResponse:
+            google.area120.tables_v1alpha1.types.BatchUpdateRowsResponse:
                 Response message for
                 TablesService.BatchUpdateRows.
 
@@ -701,13 +706,14 @@ class TablesServiceAsyncClient:
         r"""Deletes a row.
 
         Args:
-            request (:class:`~.tables.DeleteRowRequest`):
+            request (:class:`google.area120.tables_v1alpha1.types.DeleteRowRequest`):
                 The request object. Request message for
                 TablesService.DeleteRow
             name (:class:`str`):
                 Required. The name of the row to
                 delete. Format:
                 tables/{table}/rows/{row}
+
                 This corresponds to the ``name`` field
                 on the ``request`` instance; if ``request`` is provided, this
                 should not be set.

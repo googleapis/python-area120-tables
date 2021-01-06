@@ -93,7 +93,7 @@ class ListTablesResponse(proto.Message):
     r"""Response message for TablesService.ListTables.
 
     Attributes:
-        tables (Sequence[~.gat_tables.Table]):
+        tables (Sequence[google.area120.tables_v1alpha1.types.Table]):
             The list of tables.
         next_page_token (str):
             A token, which can be sent as ``page_token`` to retrieve the
@@ -117,7 +117,7 @@ class GetRowRequest(proto.Message):
         name (str):
             Required. The name of the row to retrieve.
             Format: tables/{table}/rows/{row}
-        view (~.gat_tables.View):
+        view (google.area120.tables_v1alpha1.types.View):
             Optional. Column key to use for values in the
             row. Defaults to user entered name.
     """
@@ -148,7 +148,7 @@ class ListRowsRequest(proto.Message):
             When paginating, all other parameters provided to
             ``ListRows`` must match the call that provided the page
             token.
-        view (~.gat_tables.View):
+        view (google.area120.tables_v1alpha1.types.View):
             Optional. Column key to use for values in the
             row. Defaults to user entered name.
     """
@@ -166,7 +166,7 @@ class ListRowsResponse(proto.Message):
     r"""Response message for TablesService.ListRows.
 
     Attributes:
-        rows (Sequence[~.gat_tables.Row]):
+        rows (Sequence[google.area120.tables_v1alpha1.types.Row]):
             The rows from the specified table.
         next_page_token (str):
             A token, which can be sent as ``page_token`` to retrieve the
@@ -190,9 +190,9 @@ class CreateRowRequest(proto.Message):
         parent (str):
             Required. The parent table where this row
             will be created. Format: tables/{table}
-        row (~.gat_tables.Row):
+        row (google.area120.tables_v1alpha1.types.Row):
             Required. The row to create.
-        view (~.gat_tables.View):
+        view (google.area120.tables_v1alpha1.types.View):
             Optional. Column key to use for values in the
             row. Defaults to user entered name.
     """
@@ -211,7 +211,7 @@ class BatchCreateRowsRequest(proto.Message):
         parent (str):
             Required. The parent table where the rows
             will be created. Format: tables/{table}
-        requests (Sequence[~.gat_tables.CreateRowRequest]):
+        requests (Sequence[google.area120.tables_v1alpha1.types.CreateRowRequest]):
             Required. The request message specifying the
             rows to create.
             A maximum of 500 rows can be created in a single
@@ -227,7 +227,7 @@ class BatchCreateRowsResponse(proto.Message):
     r"""Response message for TablesService.BatchCreateRows.
 
     Attributes:
-        rows (Sequence[~.gat_tables.Row]):
+        rows (Sequence[google.area120.tables_v1alpha1.types.Row]):
             The created rows.
     """
 
@@ -238,11 +238,11 @@ class UpdateRowRequest(proto.Message):
     r"""Request message for TablesService.UpdateRow.
 
     Attributes:
-        row (~.gat_tables.Row):
+        row (google.area120.tables_v1alpha1.types.Row):
             Required. The row to update.
-        update_mask (~.field_mask.FieldMask):
+        update_mask (google.protobuf.field_mask_pb2.FieldMask):
             The list of fields to update.
-        view (~.gat_tables.View):
+        view (google.area120.tables_v1alpha1.types.View):
             Optional. Column key to use for values in the
             row. Defaults to user entered name.
     """
@@ -261,7 +261,7 @@ class BatchUpdateRowsRequest(proto.Message):
         parent (str):
             Required. The parent table shared by all rows
             being updated. Format: tables/{table}
-        requests (Sequence[~.gat_tables.UpdateRowRequest]):
+        requests (Sequence[google.area120.tables_v1alpha1.types.UpdateRowRequest]):
             Required. The request messages specifying the
             rows to update.
             A maximum of 500 rows can be modified in a
@@ -277,7 +277,7 @@ class BatchUpdateRowsResponse(proto.Message):
     r"""Response message for TablesService.BatchUpdateRows.
 
     Attributes:
-        rows (Sequence[~.gat_tables.Row]):
+        rows (Sequence[google.area120.tables_v1alpha1.types.Row]):
             The updated rows.
     """
 
@@ -305,7 +305,7 @@ class Table(proto.Message):
             ``tables/{table}``.
         display_name (str):
             The human readable title of the table.
-        columns (Sequence[~.gat_tables.ColumnDescription]):
+        columns (Sequence[google.area120.tables_v1alpha1.types.ColumnDescription]):
             List of columns in this table.
             Order of columns matches the display order.
     """
@@ -345,7 +345,7 @@ class Row(proto.Message):
             The resource name of the row. Row names have the form
             ``tables/{table}/rows/{row}``. The name is ignored when
             creating a row.
-        values (Sequence[~.gat_tables.Row.ValuesEntry]):
+        values (Sequence[google.area120.tables_v1alpha1.types.Row.ValuesEntry]):
             The values of the row. This is a map of
             column key to value. Key is user entered
             name(default) or the internal column id based on
