@@ -4,7 +4,7 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/python-area120-tables.git",
-        "sha": "0f2dc5f4501f446e666c83f9e90ae17798b3a0f3"
+        "sha": "88389418f9c408db8d6c82eb6b663d77329b65af"
       }
     },
     {
@@ -91,7 +91,6 @@
     "CONTRIBUTING.rst",
     "LICENSE",
     "MANIFEST.in",
-    "area120-tables-v1alpha1-py.tar.gz",
     "docs/_static/custom.css",
     "docs/_templates/layout.html",
     "docs/conf.py",
