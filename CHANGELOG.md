@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://www.github.com/googleapis/python-area120-tables/compare/v0.2.0...v0.3.0) (2021-04-27)
+
+
+### Features
+
+* Added ListWorkspaces, GetWorkspace, BatchDeleteRows APIs ([#25](https://www.github.com/googleapis/python-area120-tables/issues/25)) ([99c6918](https://www.github.com/googleapis/python-area120-tables/commit/99c691819824ab6cc1915ba23867a5051b94b8a2))
+
 ## [0.2.0](https://www.github.com/googleapis/python-area120-tables/compare/v0.1.0...v0.2.0) (2021-01-29)
 
 
