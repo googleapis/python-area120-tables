@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.3.2](https://www.github.com/googleapis/python-area120-tables/compare/v0.3.1...v0.3.2) (2021-06-19)
+
+
+### Documentation
+
+* omit mention of Python 2.7 in 'CONTRIBUTING.rst' ([#1127](https://www.github.com/googleapis/python-area120-tables/issues/1127)) ([#56](https://www.github.com/googleapis/python-area120-tables/issues/56)) ([4bf2bae](https://www.github.com/googleapis/python-area120-tables/commit/4bf2baea55b617393487c2ae6866f04ef073378d)), closes [#1126](https://www.github.com/googleapis/python-area120-tables/issues/1126)
+
 ### [0.3.1](https://www.github.com/googleapis/python-area120-tables/compare/v0.3.0...v0.3.1) (2021-06-16)
 
 
