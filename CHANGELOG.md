@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.4.2](https://www.github.com/googleapis/python-area120-tables/compare/v0.4.1...v0.4.2) (2021-07-20)
+
+
+### Bug Fixes
+
+* **deps:** pin 'google-{api,cloud}-core', 'google-auth' to allow 2.x versions ([#69](https://www.github.com/googleapis/python-area120-tables/issues/69)) ([954f6c7](https://www.github.com/googleapis/python-area120-tables/commit/954f6c7ef550d502cb75edb1f981de8eb67849b1))
+
 ### [0.4.1](https://www.github.com/googleapis/python-area120-tables/compare/v0.4.0...v0.4.1) (2021-06-30)
 
 
