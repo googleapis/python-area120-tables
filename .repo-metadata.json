@@ -10,6 +10,6 @@
     "repo": "googleapis/python-area120-tables",
     "distribution_name": "google-area120-tables",
     "api_id": "area120tables.googleapis.com",
-    "default_version": "",
+    "default_version": "v1alpha1",
     "codeowner_team": ""
 }
