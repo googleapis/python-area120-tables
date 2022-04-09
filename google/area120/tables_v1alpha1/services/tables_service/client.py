@@ -16,7 +16,7 @@
 from collections import OrderedDict
 import os
 import re
-from typing import Dict, Optional, Sequence, Tuple, Type, Union
+from typing import Dict, Mapping, Optional, Sequence, Tuple, Type, Union
 import pkg_resources
 
 from google.api_core import client_options as client_options_lib
@@ -477,7 +477,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
 
         .. code-block:: python
 
-            from google.area120 import tables_v1alpha1
+                    from google.area120 import tables_v1alpha1
 
             def sample_get_table():
                 # Create a client
@@ -569,7 +569,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
 
         .. code-block:: python
 
-            from google.area120 import tables_v1alpha1
+                    from google.area120 import tables_v1alpha1
 
             def sample_list_tables():
                 # Create a client
@@ -652,7 +652,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
 
         .. code-block:: python
 
-            from google.area120 import tables_v1alpha1
+                    from google.area120 import tables_v1alpha1
 
             def sample_get_workspace():
                 # Create a client
@@ -745,7 +745,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
 
         .. code-block:: python
 
-            from google.area120 import tables_v1alpha1
+                    from google.area120 import tables_v1alpha1
 
             def sample_list_workspaces():
                 # Create a client
@@ -828,7 +828,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
 
         .. code-block:: python
 
-            from google.area120 import tables_v1alpha1
+                    from google.area120 import tables_v1alpha1
 
             def sample_get_row():
                 # Create a client
@@ -924,7 +924,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
 
         .. code-block:: python
 
-            from google.area120 import tables_v1alpha1
+                    from google.area120 import tables_v1alpha1
 
             def sample_list_rows():
                 # Create a client
@@ -1033,7 +1033,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
 
         .. code-block:: python
 
-            from google.area120 import tables_v1alpha1
+                    from google.area120 import tables_v1alpha1
 
             def sample_create_row():
                 # Create a client
@@ -1133,7 +1133,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
 
         .. code-block:: python
 
-            from google.area120 import tables_v1alpha1
+                    from google.area120 import tables_v1alpha1
 
             def sample_batch_create_rows():
                 # Create a client
@@ -1213,7 +1213,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
 
         .. code-block:: python
 
-            from google.area120 import tables_v1alpha1
+                    from google.area120 import tables_v1alpha1
 
             def sample_update_row():
                 # Create a client
@@ -1309,7 +1309,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
 
         .. code-block:: python
 
-            from google.area120 import tables_v1alpha1
+                    from google.area120 import tables_v1alpha1
 
             def sample_batch_update_rows():
                 # Create a client
@@ -1384,7 +1384,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
 
         .. code-block:: python
 
-            from google.area120 import tables_v1alpha1
+                    from google.area120 import tables_v1alpha1
 
             def sample_delete_row():
                 # Create a client
@@ -1467,7 +1467,7 @@ class TablesServiceClient(metaclass=TablesServiceClientMeta):
 
         .. code-block:: python
 
-            from google.area120 import tables_v1alpha1
+                    from google.area120 import tables_v1alpha1
 
             def sample_batch_delete_rows():
                 # Create a client
