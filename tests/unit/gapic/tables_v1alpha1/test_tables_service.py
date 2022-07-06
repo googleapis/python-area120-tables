@@ -3758,7 +3758,6 @@ def test_tables_service_transport_auth_adc(transport_class):
     [
         transports.TablesServiceGrpcTransport,
         transports.TablesServiceGrpcAsyncIOTransport,
-        transports.TablesServiceRestTransport,
     ],
 )
 def test_tables_service_transport_auth_gdch_credentials(transport_class):
