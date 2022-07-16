@@ -14,9 +14,9 @@ Python Client for Area 120 Tables API
    :target: https://pypi.org/project/google-area120-tables/
 .. |versions| image:: https://img.shields.io/pypi/pyversions/google-area120-tables.svg
    :target: https://pypi.org/project/google-area120-tables/
-.. _Area 120 Tables API: 
+.. _Area 120 Tables API: https://area120.google.com
 .. _Client Library Documentation: https://googleapis.dev/python/area120tables/latest
-.. _Product Documentation:  
+.. _Product Documentation:  https://area120.google.com
 
 Quick Start
 -----------
@@ -30,7 +30,7 @@ In order to use this library, you first need to go through the following steps:
 
 .. _Select or create a Cloud Platform project.: https://console.cloud.google.com/project
 .. _Enable billing for your project.: https://cloud.google.com/billing/docs/how-to/modify-project#enable_billing_for_a_project
-.. _Enable the Area 120 Tables API.:  
+.. _Enable the Area 120 Tables API.:  https://area120.google.com
 .. _Setup Authentication.: https://googleapis.dev/python/google-api-core/latest/auth.html
 
 Installation
@@ -103,5 +103,5 @@ Next Steps
 -  View this `README`_ to see the full list of Cloud
    APIs that we cover.
 
-.. _Area 120 Tables API Product documentation:  
+.. _Area 120 Tables API Product documentation:  https://area120.google.com
 .. _README: https://github.com/googleapis/google-cloud-python/blob/main/README.rst
