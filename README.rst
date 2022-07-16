@@ -1,9 +1,9 @@
-Python Client for Area 120 Tables API API
-=========================================
+Python Client for Area 120 Tables API
+=====================================
 
 |preview| |pypi| |versions|
 
-`Area 120 Tables API API`_: provides programmatic methods to the Area 120 Tables API.
+`Area 120 Tables API`_: provides programmatic methods to the Area 120 Tables API.
 
 - `Client Library Documentation`_
 - `Product Documentation`_
@@ -14,7 +14,7 @@ Python Client for Area 120 Tables API API
    :target: https://pypi.org/project/google-area120-tables/
 .. |versions| image:: https://img.shields.io/pypi/pyversions/google-area120-tables.svg
    :target: https://pypi.org/project/google-area120-tables/
-.. _Area 120 Tables API API: 
+.. _Area 120 Tables API: 
 .. _Client Library Documentation: https://googleapis.dev/python/area120tables/latest
 .. _Product Documentation:  
 
@@ -25,12 +25,12 @@ In order to use this library, you first need to go through the following steps:
 
 1. `Select or create a Cloud Platform project.`_
 2. `Enable billing for your project.`_
-3. `Enable the Area 120 Tables API API.`_
+3. `Enable the Area 120 Tables API.`_
 4. `Setup Authentication.`_
 
 .. _Select or create a Cloud Platform project.: https://console.cloud.google.com/project
 .. _Enable billing for your project.: https://cloud.google.com/billing/docs/how-to/modify-project#enable_billing_for_a_project
-.. _Enable the Area 120 Tables API API.:  
+.. _Enable the Area 120 Tables API.:  
 .. _Setup Authentication.: https://googleapis.dev/python/google-api-core/latest/auth.html
 
 Installation
@@ -96,12 +96,12 @@ Windows
 Next Steps
 ~~~~~~~~~~
 
--  Read the `Client Library Documentation`_ for Area 120 Tables API API
+-  Read the `Client Library Documentation`_ for Area 120 Tables API
    to see other available methods on the client.
--  Read the `Area 120 Tables API API Product documentation`_ to learn
+-  Read the `Area 120 Tables API Product documentation`_ to learn
    more about the product and see How-to Guides.
 -  View this `README`_ to see the full list of Cloud
    APIs that we cover.
 
-.. _Area 120 Tables API API Product documentation:  
+.. _Area 120 Tables API Product documentation:  
 .. _README: https://github.com/googleapis/google-cloud-python/blob/main/README.rst
