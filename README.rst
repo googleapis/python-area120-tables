@@ -1,9 +1,9 @@
-Python Client for Area 120 Tables API API
-=========================================
+Python Client for Area 120 Tables API
+=====================================
 
 |preview| |pypi| |versions|
 
-`Area 120 Tables API API`_: 
+`Area 120 Tables API`_: provides programmatic methods to the Area 120 Tables API.
 
 - `Client Library Documentation`_
 - `Product Documentation`_
@@ -96,12 +96,12 @@ Windows
 Next Steps
 ~~~~~~~~~~
 
--  Read the `Client Library Documentation`_ for Area 120 Tables API API
+-  Read the `Client Library Documentation`_ for Area 120 Tables API
    to see other available methods on the client.
--  Read the `Area 120 Tables API API Product documentation`_ to learn
+-  Read the `Area 120 Tables API Product documentation`_ to learn
    more about the product and see How-to Guides.
 -  View this `README`_ to see the full list of Cloud
    APIs that we cover.
 
-.. _Area 120 Tables API API Product documentation:  
+.. _Area 120 Tables API Product documentation:  https://area120.google.com
 .. _README: https://github.com/googleapis/google-cloud-python/blob/main/README.rst
