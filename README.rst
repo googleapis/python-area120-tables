@@ -1,3 +1,8 @@
+:**NOTE**: **This github repository is archived. The repository contents and history have moved to** `google-cloud-python`_.
+
+.. _google-cloud-python: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-area120-tables
+
+
 Python Client for Area 120 Tables API
 =====================================
 
